@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb); /* تدرج ألوان أزرق فاتح */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* ===== الشرط ٧: تحسين العنوان الرئيسي h1 ===== */
+h1 {
+    color: #42a5f5;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+}
+
+/* ===== الشرط ٨: تحسين العناوين الفرعية h2 ===== */
+h2 {
+    text-decoration: underline;
+    font-style: italic;
+    color: #1e88e5;
+    text-align: center;
+}
+
+/* ===== الشرط ٩: تحسين الفقرات p ===== */
+p {
+    font-weight: bold;
+    color: #1565c0;
+    line-height: 1.8; /* زيادة المسافة بين الأسطر */
+}
+
+.sidebar {
+    width: 25%;
+    background: #1976d2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 12px;
+    background: #1e88e5;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #0d47a1;
+    transform: scale(1.05); /* تكبير الزر عند التمرير */
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid #1e88e5;
+    border-radius: 15px; /* زوايا مستديرة */
+    padding: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ABC {
+    background-color: #bbdefb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.EFG {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background: #0d47a1;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
